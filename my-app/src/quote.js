@@ -2,7 +2,6 @@ import React from "react";
 import { FaTwitter, FaQuoteLeft } from "react-icons/fa";
 
 const SingleQuote = ({ author, quote, fetchData }) => {
-  console.log(typeof fetchData);
   return (
     <section className="container">
       <div className="row">
@@ -22,7 +21,8 @@ const SingleQuote = ({ author, quote, fetchData }) => {
               <div className="social-btns col-6 ">
                 <a
                   href={`https://twitter.com/intent/tweet?text=${quote}\n
-                -${author}
+                  
+                  -${author}
                 `}
                   className="btn bg-primary rounded"
                   target="blank"
